@@ -15,11 +15,7 @@ import {useEffect} from "react";
      }, [isOpen, onOpen])
 
 
-    return (
-        <div className="p-4">
-           Root Component
-        </div>
-    )
+    return null;
 }
 
 export default SetupPage;
