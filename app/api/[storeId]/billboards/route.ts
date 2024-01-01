@@ -49,6 +49,7 @@ export async function POST(
             }
         });
 
+        // console.log("Post", NextResponse.json.length)
         return NextResponse.json(billboard);
     } catch (error) {
         console.log('[BILLBOARDS_POST]', error);
@@ -71,6 +72,7 @@ export async function GET(
             }
         });
 
+        console.log('[BILLBOARDS]', NextResponse.json.toString());
         return NextResponse.json(billboards);
     } catch (error) {
         console.log('[BILLBOARDS_GET]', error);

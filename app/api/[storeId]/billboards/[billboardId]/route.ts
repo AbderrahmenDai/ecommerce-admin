@@ -18,11 +18,13 @@ export async function GET(
             }
         });
 
+        console.log("billboard", billboard)
         return NextResponse.json(billboard);
     } catch (error) {
         console.log('[BILLBOARD_GET]', error);
         return new NextResponse("Internal error", { status: 500 });
     }
+    console.log("login", NextResponse.json)
 };
 
 export async function DELETE(
@@ -112,7 +114,6 @@ export async function PATCH(
                 imageUrl
             }
         });
-
         return NextResponse.json(billboard);
     } catch (error) {
         console.log('[BILLBOARD_PATCH]', error);
